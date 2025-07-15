@@ -1,0 +1,508 @@
+<html>
+<head>
+<title>TestNG:  chrome browser</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>chrome browser</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/4</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 15 12:29:51 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>382 seconds (382237 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart()'><b>UpdatingCart</b><br>Test class: DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart<br/>
+<a href="#Output-801996095" onClick='toggleBox("Output-801996095", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-801996095" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-801996095">
+Testcase is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace801996095", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace801996095'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>33</td>
+<td>DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart@436813f3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase9_AddingToCart.AddingToCart()'><b>AddingToCart</b><br>Test class: DetailsOfAmazon.Website.TestCase9_AddingToCart<br/>
+<a href="#Output-901689694" onClick='toggleBox("Output-901689694", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-901689694" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-901689694">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>DetailsOfAmazon.Website.TestCase9_AddingToCart@8dbdac1</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.Testcase2_ValidCredentials.ValidCredentials()'><b>ValidCredentials</b><br>Test class: DetailsOfAmazon.Website.Testcase2_ValidCredentials<br/>
+<a href="#Output-1360913629" onClick='toggleBox("Output-1360913629", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1360913629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1360913629">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>DetailsOfAmazon.Website.Testcase2_ValidCredentials@2b662a77</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase14_LastProductRating.Rating()'><b>Rating</b><br>Test class: DetailsOfAmazon.Website.TestCase14_LastProductRating<br/>
+<a href="#Output-355520754" onClick='toggleBox("Output-355520754", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-355520754" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-355520754">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>DetailsOfAmazon.Website.TestCase14_LastProductRating@158d2680</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase13_ApplyCouponCode.CouponCode()'><b>CouponCode</b><br>Test class: DetailsOfAmazon.Website.TestCase13_ApplyCouponCode<br/>
+<a href="#Output-494414526" onClick='toggleBox("Output-494414526", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-494414526" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-494414526">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>DetailsOfAmazon.Website.TestCase13_ApplyCouponCode@223d2c72</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.Testcase15_ReachTillCartPage.CartPage()'><b>CartPage</b><br>Test class: DetailsOfAmazon.Website.Testcase15_ReachTillCartPage<br/>
+<a href="#Output-1227903899" onClick='toggleBox("Output-1227903899", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1227903899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1227903899">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>DetailsOfAmazon.Website.Testcase15_ReachTillCartPage@8f4ea7c</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase4_EditingProfile.EditingProfile()'><b>EditingProfile</b><br>Test class: DetailsOfAmazon.Website.TestCase4_EditingProfile<br/>
+<a href="#Output-95476731" onClick='toggleBox("Output-95476731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-95476731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-95476731">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>DetailsOfAmazon.Website.TestCase4_EditingProfile@74fe5c40</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase3_InvalidCredentials.InValidCredentials()'><b>InValidCredentials</b><br>Test class: DetailsOfAmazon.Website.TestCase3_InvalidCredentials<br/>
+<a href="#Output-181784570" onClick='toggleBox("Output-181784570", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-181784570" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-181784570">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>DetailsOfAmazon.Website.TestCase3_InvalidCredentials@7f3b84b8</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase6_SearchingWithFilters.Filters()'><b>Filters</b><br>Test class: DetailsOfAmazon.Website.TestCase6_SearchingWithFilters<br/>
+<a href="#Output-508619583" onClick='toggleBox("Output-508619583", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-508619583" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-508619583">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>DetailsOfAmazon.Website.TestCase6_SearchingWithFilters@57a3af25</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess()'><b>CheckoutProcess</b><br>Test class: DetailsOfAmazon.Website.TestCase11_CheckoutProcess<br/>
+<a href="#Output-542357345" onClick='toggleBox("Output-542357345", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-542357345" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-542357345">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>DetailsOfAmazon.Website.TestCase11_CheckoutProcess@5c33f1a9</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase12_SelectingEachPayment.PaymentMethod()'><b>PaymentMethod</b><br>Test class: DetailsOfAmazon.Website.TestCase12_SelectingEachPayment<br/>
+<a href="#Output-656806288" onClick='toggleBox("Output-656806288", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-656806288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-656806288">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>DetailsOfAmazon.Website.TestCase12_SelectingEachPayment@131774fe</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase7_ProductDetailsPage.ProductDetails()'><b>ProductDetails</b><br>Test class: DetailsOfAmazon.Website.TestCase7_ProductDetailsPage<br/>
+<a href="#Output-556223230" onClick='toggleBox("Output-556223230", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-556223230" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-556223230">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>DetailsOfAmazon.Website.TestCase7_ProductDetailsPage@3febb011</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.Testcase1_Registration.RegistrationPageDetails()'><b>RegistrationPageDetails</b><br>Test class: DetailsOfAmazon.Website.Testcase1_Registration<br/>
+<a href="#Output-1085016662" onClick='toggleBox("Output-1085016662", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1085016662" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1085016662">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>DetailsOfAmazon.Website.Testcase1_Registration@77847718</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase8_SoartingProducts.Sortingwithfilters()'><b>Sortingwithfilters</b><br>Test class: DetailsOfAmazon.Website.TestCase8_SoartingProducts<br/>
+<a href="#Output-129618340" onClick='toggleBox("Output-129618340", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-129618340" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-129618340">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>DetailsOfAmazon.Website.TestCase8_SoartingProducts@7f0eb4b4</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase5_SearchForProduct.SearchDetails()'><b>SearchDetails</b><br>Test class: DetailsOfAmazon.Website.TestCase5_SearchForProduct<br/>
+<a href="#Output-456172878" onClick='toggleBox("Output-456172878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-456172878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-456172878">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>DetailsOfAmazon.Website.TestCase5_SearchForProduct@10e31a9a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart()'><b>UpdatingCart</b><br>Test class: DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1237907176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1237907176'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>36</td>
+<td>DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart@436813f3</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart()'><b>UpdatingCart</b><br>Test class: DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1064456966", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1064456966'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>34</td>
+<td>DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart@436813f3</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess()'><b>CheckoutProcess</b><br>Test class: DetailsOfAmazon.Website.TestCase11_CheckoutProcess</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess(TestCase11_CheckoutProcess.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace56505723", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace56505723'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess(TestCase11_CheckoutProcess.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>32</td>
+<td>DetailsOfAmazon.Website.TestCase11_CheckoutProcess@5c33f1a9</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess()'><b>CheckoutProcess</b><br>Test class: DetailsOfAmazon.Website.TestCase11_CheckoutProcess</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess(TestCase11_CheckoutProcess.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace743800558", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace743800558'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess(TestCase11_CheckoutProcess.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>35</td>
+<td>DetailsOfAmazon.Website.TestCase11_CheckoutProcess@5c33f1a9</td></tr>
+</table><p>
+</body>
+</html>

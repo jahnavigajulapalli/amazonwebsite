@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="browsers" value="chrome"></parameter>
+    <classes>
+      <class name="DetailsOfAmazon.Website.TestCase9_AddingToCart"/>
+      <class name="DetailsOfAmazon.Website.TestCase13_ApplyCouponCode"/>
+      <class name="DetailsOfAmazon.Website.Testcase15_ReachTillCartPage"/>
+      <class name="DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart"/>
+      <class name="DetailsOfAmazon.Website.TestCase4_EditingProfile"/>
+      <class name="DetailsOfAmazon.Website.TestCase7_ProductDetailsPage"/>
+      <class name="DetailsOfAmazon.Website.TestCase5_SearchForProduct"/>
+      <class name="DetailsOfAmazon.Website.TestCase12_SelectingEachPayment"/>
+      <class name="DetailsOfAmazon.Website.TestCase14_LastProductRating"/>
+      <class name="DetailsOfAmazon.Website.Testcase1_Registration"/>
+      <class name="DetailsOfAmazon.Website.TestCase3_InvalidCredentials"/>
+      <class name="DetailsOfAmazon.Website.TestCase6_SearchingWithFilters"/>
+      <class name="DetailsOfAmazon.Website.Testcase2_ValidCredentials"/>
+      <class name="DetailsOfAmazon.Website.TestCase8_SoartingProducts"/>
+      <class name="DetailsOfAmazon.Website.TestCase11_CheckoutProcess"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

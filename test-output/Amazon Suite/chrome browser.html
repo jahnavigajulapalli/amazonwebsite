@@ -1,0 +1,650 @@
+<html>
+<head>
+<title>TestNG:  chrome browser</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>chrome browser</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/3/6</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 15 08:59:55 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>440 seconds (440634 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase12_SelectingEachPayment.PaymentMethod()'><b>PaymentMethod</b><br>Test class: DetailsOfAmazon.Website.TestCase12_SelectingEachPayment<br/>
+<a href="#Output-598183031" onClick='toggleBox("Output-598183031", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-598183031" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-598183031">
+Testcase is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase12_SelectingEachPayment.PaymentMethod(TestCase12_SelectingEachPayment.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace598183031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace598183031'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase12_SelectingEachPayment.PaymentMethod(TestCase12_SelectingEachPayment.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>31</td>
+<td>DetailsOfAmazon.Website.TestCase12_SelectingEachPayment@544fa968</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart()'><b>UpdatingCart</b><br>Test class: DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart<br/>
+<a href="#Output-103130367" onClick='toggleBox("Output-103130367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-103130367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-103130367">
+Testcase is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace103130367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace103130367'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>31</td>
+<td>DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart@b2c9a9c</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess()'><b>CheckoutProcess</b><br>Test class: DetailsOfAmazon.Website.TestCase11_CheckoutProcess<br/>
+<a href="#Output-1398450119" onClick='toggleBox("Output-1398450119", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1398450119" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1398450119">
+Testcase is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess(TestCase11_CheckoutProcess.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1398450119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398450119'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess(TestCase11_CheckoutProcess.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>32</td>
+<td>DetailsOfAmazon.Website.TestCase11_CheckoutProcess@77f1baf5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DetailsOfAmazon.Website.Testcase2_ValidCredentials.ValidCredentials()'><b>ValidCredentials</b><br>Test class: DetailsOfAmazon.Website.Testcase2_ValidCredentials<br/>
+<a href="#Output-201662949" onClick='toggleBox("Output-201662949", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-201662949" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-201662949">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>DetailsOfAmazon.Website.Testcase2_ValidCredentials@24313fcc</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase8_SoartingProducts.Sortingwithfilters()'><b>Sortingwithfilters</b><br>Test class: DetailsOfAmazon.Website.TestCase8_SoartingProducts<br/>
+<a href="#Output-254871157" onClick='toggleBox("Output-254871157", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-254871157" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-254871157">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>DetailsOfAmazon.Website.TestCase8_SoartingProducts@7d20d0b</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase9_AddingToCart.AddingToCart()'><b>AddingToCart</b><br>Test class: DetailsOfAmazon.Website.TestCase9_AddingToCart<br/>
+<a href="#Output-455668354" onClick='toggleBox("Output-455668354", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-455668354" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-455668354">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>DetailsOfAmazon.Website.TestCase9_AddingToCart@5aa9e4eb</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.Testcase15_ReachTillCartPage.CartPage()'><b>CartPage</b><br>Test class: DetailsOfAmazon.Website.Testcase15_ReachTillCartPage<br/>
+<a href="#Output-1227438915" onClick='toggleBox("Output-1227438915", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1227438915" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1227438915">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>DetailsOfAmazon.Website.Testcase15_ReachTillCartPage@2362f559</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase6_SearchingWithFilters.Filters()'><b>Filters</b><br>Test class: DetailsOfAmazon.Website.TestCase6_SearchingWithFilters<br/>
+<a href="#Output-435949303" onClick='toggleBox("Output-435949303", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-435949303" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-435949303">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>DetailsOfAmazon.Website.TestCase6_SearchingWithFilters@5e5d171f</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase13_ApplyCouponCode.CouponCode()'><b>CouponCode</b><br>Test class: DetailsOfAmazon.Website.TestCase13_ApplyCouponCode<br/>
+<a href="#Output-2000421523" onClick='toggleBox("Output-2000421523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2000421523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2000421523">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>DetailsOfAmazon.Website.TestCase13_ApplyCouponCode@8297b3a</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase14_LastProductRating.Rating()'><b>Rating</b><br>Test class: DetailsOfAmazon.Website.TestCase14_LastProductRating<br/>
+<a href="#Output-508619583" onClick='toggleBox("Output-508619583", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-508619583" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-508619583">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>DetailsOfAmazon.Website.TestCase14_LastProductRating@247bddad</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.Testcase1_Registration.RegistrationPageDetails()'><b>RegistrationPageDetails</b><br>Test class: DetailsOfAmazon.Website.Testcase1_Registration<br/>
+<a href="#Output-535525049" onClick='toggleBox("Output-535525049", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-535525049" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-535525049">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>DetailsOfAmazon.Website.Testcase1_Registration@d35dea7</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase3_InvalidCredentials.InValidCredentials()'><b>InValidCredentials</b><br>Test class: DetailsOfAmazon.Website.TestCase3_InvalidCredentials<br/>
+<a href="#Output-592242687" onClick='toggleBox("Output-592242687", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-592242687" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-592242687">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>DetailsOfAmazon.Website.TestCase3_InvalidCredentials@7770f470</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase5_SearchForProduct.SearchDetails()'><b>SearchDetails</b><br>Test class: DetailsOfAmazon.Website.TestCase5_SearchForProduct<br/>
+<a href="#Output-787033725" onClick='toggleBox("Output-787033725", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-787033725" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-787033725">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>DetailsOfAmazon.Website.TestCase5_SearchForProduct@3bd82cf5</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase7_ProductDetailsPage.ProductDetails()'><b>ProductDetails</b><br>Test class: DetailsOfAmazon.Website.TestCase7_ProductDetailsPage<br/>
+<a href="#Output-2105339048" onClick='toggleBox("Output-2105339048", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2105339048" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2105339048">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>DetailsOfAmazon.Website.TestCase7_ProductDetailsPage@fa4c865</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase4_EditingProfile.EditingProfile()'><b>EditingProfile</b><br>Test class: DetailsOfAmazon.Website.TestCase4_EditingProfile<br/>
+<a href="#Output-184410212" onClick='toggleBox("Output-184410212", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-184410212" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-184410212">
+Testcase is passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>DetailsOfAmazon.Website.TestCase4_EditingProfile@4c178a76</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess()'><b>CheckoutProcess</b><br>Test class: DetailsOfAmazon.Website.TestCase11_CheckoutProcess</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess(TestCase11_CheckoutProcess.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace571518740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace571518740'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess(TestCase11_CheckoutProcess.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>31</td>
+<td>DetailsOfAmazon.Website.TestCase11_CheckoutProcess@77f1baf5</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart()'><b>UpdatingCart</b><br>Test class: DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1217639236", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1217639236'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>31</td>
+<td>DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart@b2c9a9c</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart()'><b>UpdatingCart</b><br>Test class: DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1860060918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1860060918'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CartPage.AddtoCart1(CartPage.java:34)
+	at DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart.UpdatingCart(TestCase10_UpdatingandRemovingfromCart.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>31</td>
+<td>DetailsOfAmazon.Website.TestCase10_UpdatingandRemovingfromCart@b2c9a9c</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase12_SelectingEachPayment.PaymentMethod()'><b>PaymentMethod</b><br>Test class: DetailsOfAmazon.Website.TestCase12_SelectingEachPayment</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase12_SelectingEachPayment.PaymentMethod(TestCase12_SelectingEachPayment.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace287609100", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace287609100'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase12_SelectingEachPayment.PaymentMethod(TestCase12_SelectingEachPayment.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>31</td>
+<td>DetailsOfAmazon.Website.TestCase12_SelectingEachPayment@544fa968</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess()'><b>CheckoutProcess</b><br>Test class: DetailsOfAmazon.Website.TestCase11_CheckoutProcess</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess(TestCase11_CheckoutProcess.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace874378099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace874378099'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase11_CheckoutProcess.CheckoutProcess(TestCase11_CheckoutProcess.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>32</td>
+<td>DetailsOfAmazon.Website.TestCase11_CheckoutProcess@77f1baf5</td></tr>
+<tr>
+<td title='DetailsOfAmazon.Website.TestCase12_SelectingEachPayment.PaymentMethod()'><b>PaymentMethod</b><br>Test class: DetailsOfAmazon.Website.TestCase12_SelectingEachPayment</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase12_SelectingEachPayment.PaymentMethod(TestCase12_SelectingEachPayment.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace265569691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace265569691'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at DetailsOfAmazon.Website.CheckOutProcessPage.Changeadd(CheckOutProcessPage.java:78)
+	at DetailsOfAmazon.Website.TestCase12_SelectingEachPayment.PaymentMethod(TestCase12_SelectingEachPayment.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>32</td>
+<td>DetailsOfAmazon.Website.TestCase12_SelectingEachPayment@544fa968</td></tr>
+</table><p>
+</body>
+</html>
